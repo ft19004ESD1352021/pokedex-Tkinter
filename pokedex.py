@@ -1,11 +1,8 @@
 
 from tkinter import *
 import tkinter as tk
-from typing import Sized
 from tkinter.ttk import *
-import pandas
-import numpy
-import os
+
 
 from pandas.core import frame
 import estadisticas
