@@ -24,30 +24,30 @@ def pokePoder(dataTable, typePokemon):
     pokemonesNames = dataTable[dataTable["Type 1"] == typePokemon]
     ordenando = pokemonesNames.sort_values(by='Total',ascending=False)
     final = ordenando["Total"]
-    return final[0:3]
+    return final
 
 
 def nombrePoke(dataTable, typePokemon):
     pokemonesNames = dataTable[dataTable["Type 1"] == typePokemon]
     ordenando = pokemonesNames.sort_values(by='Total',ascending=False)
     final = ordenando["Name"]
-    return final[0:3]
+    return final
     
 def ataque(dataTable, typePokemon):
     pokemonesNames = dataTable[dataTable["Type 1"] == typePokemon]
     ordenando = pokemonesNames.sort_values(by='Total',ascending=False)
     nombre = ordenando["Attack"]
-    return nombre[0:3]
+    return nombre
     
 
 def defensa(dataTable, typePokemon):
     pokemonesNames = dataTable[dataTable["Type 1"] == typePokemon]
     ordenando = pokemonesNames.sort_values(by='Total',ascending=False)
     defensa = ordenando["Defense"]
-    return defensa[0:3]
+    return defensa
 
 def salud(dataTable,typePokemon):
     pokemonesNames = dataTable[dataTable["Type 1"] == typePokemon]
     ordenando = pokemonesNames.sort_values(by='Total',ascending=False)
     salud = ordenando["HP"]
-    return salud[0:3]
+    return salud
